@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD78F399-6FB1-42BA-B895-32FF4578DF6C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{BAB314F5-7735-4E0F-A90D-8D9FA6FC54F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NewsGrabEngine</RootNamespace>
-    <AssemblyName>NewsGrabEngine</AssemblyName>
+    <RootNamespace>RHClassLibrary</RootNamespace>
+    <AssemblyName>RHClassLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,25 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Object\Tags\A.cs" />
-    <Compile Include="Object\Website.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MyXmlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Config\websiteConfig.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{8bc925d5-30d6-439a-aa78-6444d549d825}</Project>
+      <Project>{0f861523-5344-4486-b187-f6fb1129f838}</Project>
       <Name>Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RHClassLibrary\RHClassLibrary.csproj">
-      <Project>{bab314f5-7735-4e0f-a90d-8d9fa6fc54f3}</Project>
-      <Name>RHClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

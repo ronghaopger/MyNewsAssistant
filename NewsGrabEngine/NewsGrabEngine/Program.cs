@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NewsGrabEngine.Object;
+using NewsGrabEngine.Object.Tags;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -11,8 +13,10 @@ namespace NewsGrabEngine
     {
         static void Main(string[] args)
         {
-
-            WebRequest request = WebRequest.Create();
+            //MyXmlHelper Xmlhelper = new MyXmlHelper(System.AppDomain.CurrentDomain.BaseDirectory + @"Config\website.xml");
+            Website website = new Website("http://soccer.hupu.com/");
+            List<string> aList = A.FindAll(website.GetWebContent());
+            Console.ReadKey();
         }
     }
 }
