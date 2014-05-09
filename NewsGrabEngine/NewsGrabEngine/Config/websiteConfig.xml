@@ -1,3 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <websites>
+  <website name="虎扑足球" url="http://2014.hupu.com/">
+    <forums>
+      <forum name="头条" begin-flag="新闻头条" end-flag="赛场热点"></forum>
+      <forum name="A组" begin-flag="" end-flag=""></forum>
+    </forums>
+  </website>
 </websites>
