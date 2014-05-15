@@ -16,12 +16,12 @@ namespace NewsGrabEngine.Object
         {
             model.Url = url;
         }
-        public string GetWebContent()
+        public string GetWebContent(string encodingType)
         {
             WebRequest request = WebRequest.Create(model.Url);
             WebResponse response = request.GetResponse();
             System.IO.Stream stream = response.GetResponseStream();
-            System.IO.StreamReader reader = new System.IO.StreamReader(stream, Encoding.GetEncoding("utf-8"));
+            System.IO.StreamReader reader = new System.IO.StreamReader(stream, Encoding.GetEncoding(encodingType));
             string content = reader.ReadToEnd();
             return content;
         }

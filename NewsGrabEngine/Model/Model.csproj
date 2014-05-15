@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AModel.cs" />
     <Compile Include="forumModel.cs" />
     <Compile Include="websiteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

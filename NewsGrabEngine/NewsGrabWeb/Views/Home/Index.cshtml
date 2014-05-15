@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+            </hgroup>
+        </div>
+    </section>
+}
+<h3>昨晚头条</h3>
+
+<ol class="round">
+    @foreach (var amodel in ViewData.Model)
+    {
+        <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+    }
+</ol>

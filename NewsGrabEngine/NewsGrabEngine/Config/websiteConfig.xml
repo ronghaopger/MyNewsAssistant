@@ -1,8 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <websites>
-  <website name="虎扑足球" url="http://2014.hupu.com/">
+  <website name="虎扑" url="http://2014.hupu.com/" charset="utf-8">
     <forums>
       <forum name="头条" begin-flag="新闻头条" end-flag="赛场热点"></forum>
+      <forum name="A组" begin-flag="" end-flag=""></forum>
+    </forums>
+  </website>
+  
+  <website name="腾讯" url="http://2014.qq.com/" charset="gb2312">  
+    <forums>
+      <forum name="头条" begin-flag="toutiao" end-flag="不删档开启！《FIFA Online 3》开放激活码"></forum>
+      <forum name="A组" begin-flag="" end-flag=""></forum>
+    </forums>
+  </website>
+
+  <website name="新浪" url="http://2014.sina.com.cn/" charset="gb2312">
+    <forums>
+      <forum name="头条" begin-flag="新闻头条" end-flag="视频头条"></forum>
+      <forum name="A组" begin-flag="" end-flag=""></forum>
+    </forums>
+  </website>
+
+  <website name="凤凰网" url="http://2014.ifeng.com/" charset="utf-8">
+    <forums>
+      <forum name="头条" begin-flag="mainleftdiv" end-flag="phoPic"></forum>
       <forum name="A组" begin-flag="" end-flag=""></forum>
     </forums>
   </website>

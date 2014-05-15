@@ -10,6 +10,7 @@ namespace Model
     {
         public string Name { get; set; }
         public string Url { get; set; }
+        public string Charset { get; set; }
         private Dictionary<string, forumModel> _forumDic = new Dictionary<string, forumModel>();
         public Dictionary<string, forumModel> ForumDic
         {

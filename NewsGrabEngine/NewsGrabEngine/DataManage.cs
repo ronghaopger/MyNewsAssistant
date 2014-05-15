@@ -12,18 +12,20 @@ using System.Xml;
 
 namespace NewsGrabEngine
 {
-    class Program
+    public class DataManage
     {
-        static void Main(string[] args)
+        public static List<AModel> GetHotNews()
         {
-            websiteModel model = new websiteModel();
+            List<AModel> allHot = new List<AModel>();
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(System.AppDomain.CurrentDomain.BaseDirectory.Replace(@"bin\Debug\", string.Empty) + @"Config\websiteConfig.xml");
+            xmlDoc.Load(System.AppDomain.CurrentDomain.BaseDirectory.Replace(@"NewsGrabWeb", string.Empty) + @"NewsGrabEngine\Config\websiteConfig.xml");
             XmlNode root = xmlDoc.SelectSingleNode("websites");
             foreach (XmlNode node in root.ChildNodes)
             {
+                websiteModel model = new websiteModel();
                 model.Name = node.Attributes[0].Value;
                 model.Url = node.Attributes[1].Value;
+                model.Charset = node.Attributes[2].Value;
                 XmlNode foumRoot = node.SelectSingleNode("forums");
                 foreach (XmlNode forumNode in foumRoot.ChildNodes)
                 {
@@ -33,11 +35,11 @@ namespace NewsGrabEngine
                     forummodel.EndFlag = forumNode.Attributes[2].Value;
                     model.ForumDic.Add(forummodel.Name, forummodel);
                 }
+                Website website = new Website(model.Url);
+                string forumContent = Forum.GetForum(website.GetWebContent(model.Charset) , model.ForumDic["头条"]);
+                allHot.AddRange(A.FindAll(forumContent));
             }
-            Website website = new Website(model.Url);
-            string forumContent = Forum.GetForum(website.GetWebContent(), model.ForumDic["头条"]);
-            List<string> aList = A.FindAll(forumContent);
-            Console.ReadKey();
+            return allHot;
         }
     }
 }
