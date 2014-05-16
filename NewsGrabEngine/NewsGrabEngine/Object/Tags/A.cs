@@ -25,7 +25,10 @@ namespace NewsGrabEngine.Object.Tags
                     AModel amodel = new AModel();
                     amodel.Url = GetTagAttribute(astring, "href");
                     amodel.Title = GetTagContent(astring);
-                    AList.Add(amodel);
+                    if (amodel.Url != string.Empty && amodel.Title != string.Empty)
+                    {
+                        AList.Add(amodel);
+                    }
                 }
                 else
                     break;

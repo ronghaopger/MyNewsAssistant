@@ -18,7 +18,7 @@ namespace NewsGrabEngine
         {
             List<AModel> allHot = new List<AModel>();
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(System.AppDomain.CurrentDomain.BaseDirectory.Replace(@"NewsGrabWeb", string.Empty) + @"NewsGrabEngine\Config\websiteConfig.xml");
+            xmlDoc.Load(System.AppDomain.CurrentDomain.BaseDirectory + @"\Config\websiteConfig.xml");
             XmlNode root = xmlDoc.SelectSingleNode("websites");
             foreach (XmlNode node in root.ChildNodes)
             {
