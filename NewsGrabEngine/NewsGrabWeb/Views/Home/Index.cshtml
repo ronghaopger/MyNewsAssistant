@@ -12,11 +12,23 @@
 }
 
 <h3>昨晚头条</h3>
-
-<ol class="round">
-    @foreach (var amodel in ViewData.Model)
-    {
-        <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
-    }
-</ol>
-
+<div style="float:left; text-align: center;color: #000;background-color: #ABABAB;">
+    <ul style="list-style-type:none;padding: 0;display: block;">
+        <li id="scoretab_btn0" onclick="" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">虎扑</a></li>
+        <li id="scoretab_btn1" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">腾讯</a></li>
+        <li id="scoretab_btn2" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">新浪</a></li>
+        <li id="scoretab_btn3" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">凤凰网</a></li>
+    </ul>
+</div>
+<div>
+    <ol class="round">
+        @foreach (var amodel in ViewData.Model)
+        {
+            if(amodel.FromWhere == "虎扑")
+            {
+                <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+            }
+        }
+    </ol>
+</div>
+<script></script>

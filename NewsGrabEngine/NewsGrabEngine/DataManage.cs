@@ -37,7 +37,7 @@ namespace NewsGrabEngine
                 }
                 Website website = new Website(model.Url);
                 string forumContent = Forum.GetForum(website.GetWebContent(model.Charset) , model.ForumDic["头条"]);
-                allHot.AddRange(A.FindAll(forumContent));
+                allHot.AddRange(A.FindAll(forumContent, model.Name));
             }
             return allHot;
         }

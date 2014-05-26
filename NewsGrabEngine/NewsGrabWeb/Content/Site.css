@@ -260,7 +260,7 @@ ol.round {
 
     ol.round li {
         margin: 5px 0;
-        padding-left: 45px;
+        padding-left: 0px;
     }
 
         ol.round li.zero {
@@ -758,5 +758,4 @@ tr.pager td {
 
     /*  my style
         -------------------------------------------------------*/
-   
 }

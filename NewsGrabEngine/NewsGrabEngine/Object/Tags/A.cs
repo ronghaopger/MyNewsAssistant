@@ -9,7 +9,7 @@ namespace NewsGrabEngine.Object.Tags
 {
     public class A
     {
-        public static List<AModel> FindAll(string content)
+        public static List<AModel> FindAll(string content,string websiteName)
         {
             List<AModel> AList = new List<AModel>();
             int[] flag = new int[2];
@@ -25,6 +25,7 @@ namespace NewsGrabEngine.Object.Tags
                     AModel amodel = new AModel();
                     amodel.Url = GetTagAttribute(astring, "href");
                     amodel.Title = GetTagContent(astring);
+                    amodel.FromWhere = websiteName;
                     if (amodel.Url != string.Empty && amodel.Title != string.Empty)
                     {
                         AList.Add(amodel);
