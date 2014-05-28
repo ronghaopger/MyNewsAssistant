@@ -11,24 +11,118 @@
     </section>
 }
 
-<h3>昨晚头条</h3>
-<div style="float:left; text-align: center;color: #000;background-color: #ABABAB;">
-    <ul style="list-style-type:none;padding: 0;display: block;">
-        <li id="scoretab_btn0" onclick="" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">虎扑</a></li>
-        <li id="scoretab_btn1" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">腾讯</a></li>
-        <li id="scoretab_btn2" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">新浪</a></li>
-        <li id="scoretab_btn3" style="float:left"><a style="text-decoration: none;" href="javascript:void(0)">凤凰网</a></li>
-    </ul>
+<div style="overflow: hidden;border-left: 4px solid #397ddb;padding-left: 20px;font-size: 34px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;">
+<span style="font-size: 34px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;color: #c8c8c8;">昨晚头条</span>
 </div>
-<div>
-    <ol class="round">
-        @foreach (var amodel in ViewData.Model)
-        {
-            if(amodel.FromWhere == "虎扑")
-            {
-                <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
-            }
-        }
-    </ol>
+<div style="width:900px;height:500px;margin-top:20px;">
+    <div style="width:880px;height:500px">
+        <div id="list" style="width: 1186px;">
+            <div id="hupu" style="float:left; width: 300px; height: 600px; overflow: hidden; border-right:1px solid #c8c8c8;font-size:15px;">
+                <span>来自虎扑</span>
+                <div>
+                    <ol class="round">
+                        @foreach (var amodel in ViewData.Model)
+                        {
+                            if(amodel.FromWhere == "虎扑")
+                            {
+                                <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                            }
+                        }
+                    </ol>
+                </div>
+            </div>
+            <div id="tengxun" style="float:left; margin-left:30px; width: 170px; height: 400px; overflow: hidden; border-right:1px solid #c8c8c8;font-size:11px;">
+                <span>来自腾讯</span>
+                 <div>
+                    <ol class="round">
+                        @foreach (var amodel in ViewData.Model)
+                        {
+                            if (amodel.FromWhere == "腾讯")
+                            {
+                                <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                            }
+                        }
+                    </ol>
+                </div>
+            </div>
+            <div id="xinlang" style="float:left; margin-left:30px; width: 170px; height: 400px; overflow: hidden; border-right:1px solid #c8c8c8;font-size:11px;">
+                <span>来自新浪</span>
+                 <div>
+                    <ol class="round">
+                        @foreach (var amodel in ViewData.Model)
+                        {
+                            if (amodel.FromWhere == "新浪")
+                            {
+                                <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                            }
+                        }
+                    </ol>
+                </div>
+            </div>
+            <div id="fenghuangwang" style="float:left; margin-left:30px; width: 170px; height: 400px; overflow: hidden; font-size:11px;">
+                <span>来自凤凰网</span>
+                 <div>
+                    <ol class="round">
+                        @foreach (var amodel in ViewData.Model)
+                        {
+                            if (amodel.FromWhere == "凤凰网")
+                            {
+                                <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                            }
+                        }
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<script></script>
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#hupu").mouseenter(function () {
+            $("div#list div").each(function () {
+                if (this.id == "hupu")
+                {
+                    $(this).css({ "width": "300px", "height": "600px", "fontSize": "15px" });
+
+                }
+                else if (this.id == "tengxun" || this.id == "xinlang" || this.id == "fenghuangwang")
+                {
+                    $(this).css({ "width": "170px", "height": "400px", "fontSize": "11px" });
+                }
+            })
+        });
+        $("#xinlang").mouseenter(function () {
+            $("div#list div").each(function () {
+                if (this.id == "xinlang") {
+                    $(this).css({ "width": "300px", "height": "600px", "fontSize": "15px" });
+
+                }
+                else if (this.id == "tengxun" || this.id == "hupu" || this.id == "fenghuangwang") {
+                    $(this).css({ "width": "170px", "height": "400px", "fontSize": "11px" });
+                }
+            })
+        });
+        $("#tengxun").mouseenter(function () {
+            $("div#list div").each(function () {
+                if (this.id == "tengxun") {
+                    $(this).css({ "width": "300px", "height": "600px", "fontSize": "15px" });
+
+                }
+                else if (this.id == "hupu" || this.id == "xinlang" || this.id == "fenghuangwang") {
+                    $(this).css({ "width": "170px", "height": "400px", "fontSize": "11px" });
+                }
+            })
+        });
+        $("#fenghuangwang").mouseenter(function () {
+            $("div#list div").each(function () {
+                if (this.id == "fenghuangwang") {
+                    $(this).css({ "width": "300px","height": "600px", "fontSize": "15px" });
+                }
+                else if (this.id == "tengxun" || this.id == "xinlang" || this.id == "hupu") {
+                    $(this).css({ "width": "170px", "height": "400px", "fontSize": "11px" });
+                }
+            })
+        });
+    });
+</script>
