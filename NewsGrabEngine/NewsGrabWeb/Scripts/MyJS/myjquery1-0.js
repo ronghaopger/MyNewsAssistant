@@ -59,7 +59,7 @@
                 $(div).attr("DownFlag", false);
                 $(div01).css({ "marginTop": "0px" });
             }
-            else if (mouse.pageY - $(div01)[0].offsetTop > 400) {
+            else if (mouse.pageY - $(div01)[0].offsetTop > 350) {
                 if ($(div).attr("DownFlag") == "true")
                     return;
                 $(div).attr("DownFlag", true);
