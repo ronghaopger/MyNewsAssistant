@@ -13,6 +13,20 @@
       <forum name="H组" begin-flag="" end-flag=""></forum>
     </forums>
   </website>
+
+  <website name="懂球帝" url="http://www.dongqiudi.com/" charset="utf-8">
+    <forums>
+      <forum name="头条" begin-flag="头条" end-flag="国内"></forum>
+      <forum name="A组" begin-flag="" end-flag=""></forum>
+      <forum name="B组" begin-flag="" end-flag=""></forum>
+      <forum name="C组" begin-flag="" end-flag=""></forum>
+      <forum name="D组" begin-flag="" end-flag=""></forum>
+      <forum name="E组" begin-flag="" end-flag=""></forum>
+      <forum name="F组" begin-flag="" end-flag=""></forum>
+      <forum name="G组" begin-flag="" end-flag=""></forum>
+      <forum name="H组" begin-flag="" end-flag=""></forum>
+    </forums>
+  </website>
   
   <website name="腾讯" url="http://2014.qq.com/" charset="gb2312">  
     <forums>
