@@ -15,24 +15,23 @@ namespace NewsGrabWeb.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-
             ViewData.Model = DataManage.GetHotNews();
 
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Search()
         {
-            ViewBag.Message = "Your app description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult InTime()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult About()
+        {
             return View();
         }
     }

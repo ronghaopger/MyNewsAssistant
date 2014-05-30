@@ -2,7 +2,7 @@
 <websites>
   <website name="虎扑" url="http://2014.hupu.com/" charset="utf-8">
     <forums>
-      <forum name="头条" begin-flag="新闻头条" end-flag="赛场热点"></forum>
+      <forum name="头条" begin-flag="新闻头条" end-flag="teams-list-all-box"></forum>
       <forum name="A组" begin-flag="" end-flag=""></forum>
       <forum name="B组" begin-flag="" end-flag=""></forum>
       <forum name="C组" begin-flag="" end-flag=""></forum>

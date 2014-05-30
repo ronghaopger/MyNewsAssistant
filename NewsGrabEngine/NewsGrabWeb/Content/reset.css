@@ -1,0 +1,20 @@
+html{ width:100%;  height:100%;  margin:0;  padding:0}
+body, td{ line-height:1.4em;}
+body,div, ul, li, ol, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd{ margin:0;  padding:0;  font-size:12px;  font-weight:normal;}
+p, fieldset, table, pre{margin-bottom:0}
+table{ border-collapse:collapse;  border-spacing:0}
+img{ border:0 none}
+address, caption, cite, code, dfn, em, th, var{ font-style:normal;  font-weight:normal}
+ul li{ list-style-image:none;  list-style-position:outside;  list-style-type:none}
+caption, th{ text-align:left}
+h1, h2, h3, h4, h5, h6{ vertical-align:baseline;  zoom:1}
+input, textarea, select, button{ font-weight:inherit;  font-family:inherit;  font-size:inherit}
+button{ border:none;  padding:0}
+button::-moz-focus-inner{ border:none}
+input[type=radio], input[type=checkbox]{ vertical-align:middle}
+input.checkbox{ vertical-align:middle}
+* html input{ vertical-align:baseline}
+textarea{ overflow:auto}
+a{color:#000}
+a:focus{ outline-style:none;  outline-width:0}
+ul:after{ clear:both;  content:".";  display:block;  height:0;  visibility:hidden}

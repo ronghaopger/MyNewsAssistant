@@ -1,0 +1,238 @@
+.bgall { background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg01.jpg) repeat-y center 0; margin-bottom: 15px; margin-top:15px;}
+.bg01 { background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg_all.jpg) no-repeat center 0; width:100%; height:944px; }
+.bg02 { background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg_all.jpg) no-repeat center 0; height:944px; }
+.col { width:1000px; margin:0 auto; position:relative; }
+.ul_time { padding:25px 0 0 205px; height:102px; }
+.ul_time li { float:left; width:43px; height:102px; background:url(http://y1.ifengimg.com/2f86f1d4ae63c9a4/2012/0726/link.gif); cursor:pointer; }
+.ul_time li.current{ background: url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg_all_h.jpg); }
+#li0613.current{ background-position:-337px -25px; }
+#li0614.current{ background-position:-380px -25px; }
+#li0615.current{ background-position:-423px -25px; }
+#li0616.current{ background-position:-466px -25px; }
+#li0617.current{ background-position:-509px -25px; }
+#li0618.current{ background-position:-552px -25px; }
+#li0619.current{ background-position:-595px -25px; }
+#li0620.current{ background-position:-638px -25px; }
+#li0621.current{ background-position:-681px -25px; }
+#li0622.current{ background-position:-724px -25px; }
+#li0623.current{ background-position:-767px -25px; }
+#li0624.current{ background-position:-810px -25px; }
+#li0625.current{ background-position:-853px -25px; }
+#li0626.current{ background-position:-337px -780px; }
+#li0627.current{ background-position:-380px -780px; }
+#li0629.current{ background-position:-423px -780px; }
+#li0630.current{ background-position:-466px -780px; }
+#li0701.current{ background-position:-509px -780px; }
+#li0702.current{ background-position:-552px -780px; }
+#li0705.current{ background-position:-595px -780px; }
+#li0706.current{ background-position:-638px -780px; }
+#li0709.current{ background-position:-681px -780px; }
+#li0710.current{ background-position:-724px -780px; }
+#li0713.current{ background-position:-767px -780px; }
+#li0714.current{ background-position:-810px -780px; }
+.box01 { width:900px; height:653px; margin:0 auto; overflow:hidden; }
+.box01_l li, .box01_r li { cursor:pointer; }
+.box01_l { width:120px; float:left; padding:21px 0 0 9px; }
+.box01_m { width:640px; float:left; height:653px; }
+.box01_r { width:120px; float:right; padding:21px 11px 0 0; }
+.box01 .box01_l ul li.current,.box01 .box01_r ul li.current{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg_all_h.jpg); }
+.box_logo {width: 380px;height: 238px;background: url(http://y3.ifengimg.com/a/2014/0506/logo.png) no-repeat;_background: none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y3.ifengimg.com/a/2014/0506/logo.png");position: absolute;left: 145px;top: 108px;z-index: 100;}
+#baxi.current{ background-position:-191px -148px; }
+#keluodiya.current{ background-position:-191px -184px; }
+#moxige.current{ background-position:-191px -220px; }
+#kamailong.current{ background-position:-191px -256px; }
+#xibanya.current{ background-position:-191px -304px; }
+#helan.current{ background-position:-191px -340px; }
+#zhili.current{ background-position:-191px -376px; }
+#aodaliya.current{ background-position:-191px -412px; }
+#gelunbiya.current{ background-position:-191px -460px; }
+#xila.current{ background-position:-191px -496px; }
+#ketediwa.current{ background-position:-191px -532px; }
+#riben.current{ background-position:-191px -568px; }
+#wulagui.current{ background-position:-191px -617px; }
+#gesidalijia.current{ background-position:-191px -653px; }
+#yinggelan.current{ background-position:-191px -689px; }
+#yidali.current{ background-position:-191px -725px; }
+#ruishi.current{ background-position:-951px -148px; }
+#eguaduoer.current{ background-position:-951px -184px; }
+#faguo.current{ background-position:-951px -220px; }
+#hongdulasi.current{ background-position:-951px -256px; }
+#agenting.current{ background-position:-951px -304px; }
+#bohei.current{ background-position:-951px -340px; }
+#yilang.current{ background-position:-951px -376px; }
+#niriliya.current{ background-position:-951px -412px; }
+#deguo.current{ background-position:-951px -460px; }
+#putaoya.current{ background-position:-951px -496px; }
+#jiana.current{ background-position:-951px -532px; }
+#meiguo.current{ background-position:-951px -568px; }
+#bilishi.current{ background-position:-951px -616px; }
+#aerjiliya.current{ background-position:-951px -652px; }
+#eluosi.current{ background-position:-951px -688px; }
+#hanguo.current{ background-position:-951px -724px; }
+.box01_l ul { margin-bottom:12px; }
+.box01_l ul li { height:36px; width:100%; background:url(http://y1.ifengimg.com/2f86f1d4ae63c9a4/2012/0726/link.gif); }
+.box01_r ul { margin-bottom:12px; }
+.box01_r ul li { height:36px; width:100%; background:url(http://y1.ifengimg.com/2f86f1d4ae63c9a4/2012/0726/link.gif); }
+.tit01 { font: 20px/52px microsoft yahei; padding: 20px 0 0 0; color: #f7be00; text-align: center; height: 60px; }
+
+.box_vs { width: 518px; margin: 0 auto; background: url(http://y1.ifengimg.com/a/2014/0410/worldCup/tit_bg.jpg) no-repeat center 0; margin-top: 35px; }
+.box_tit { height:21px; }
+.box02_l { width:190px; float:left; }
+.box02_m { width:113px; float:left; color:#fff; font:12px/20px microsoft yahei; padding:0 10px; }
+.s01 { float:left; }
+.s02 { float:right; }
+.box02_r { width:194px; float:left; }
+.box02_l p { text-align:right; color:#4d4d4d; line-height:18px; padding:3px 33px 0 0; }
+.box02_r p { color:#4d4d4d; line-height:18px; margin:3px 0 0 13px; background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/tit_bg02.jpg) no-repeat right 0; float:left; padding-right:20px; }
+.box_tit02 { height:48px; overflow:hidden; cursor:pointer; }
+.box03_l { width:194px; float:left; }
+.box03_l span { display:block; width:56px; height:56px; float:left; margin-top:-4px; }
+.box03_r span { display:block; width:56px; height:56px; float:right; margin-top:-4px; }
+.box03_l em, .box03_r em { text-align:center; font:16px/48px microsoft yahei; color:#fff; display:block; width:138px; float:left; }
+.bg_y{background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg04.jpg); position:absolute; left:0; top:0; height:3px; width:100%; z-index:100;}
+.baxi{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/baxi.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/baxi.png") }
+.gesidalijia { background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/gesidalijia.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/gesidalijia.png") }
+.eluosi{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/eluosi.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/eluosi.png") }
+.keluodiya{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/keluodiya.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/keluodiya.png") }
+.moxige{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/moxige.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/moxige.png") }
+.kamailong{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/kamailong.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/kamailong.png")}
+.xibanya{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/xibanya.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/xibanya.png") }
+.zhili{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/zhili.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/zhili.png") }
+.aodaliya{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/aodaliya.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/aodaliya.png") }
+.gelunbiya{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/gelunbiya.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/gelunbiya.png") }
+
+.xila{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/xila.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/xila.png") }
+.ketediwa{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/ketedigua.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/ketediwa.png")}
+.riben{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/riben.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/riben.png") }
+.wulagui{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/wulagui.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/wulagui.png") }
+.yinggelan{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/yinggelan.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/yinggelan.png") }
+.yidali{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/yidali.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/yidali.png")}
+.eguaduoer{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/eguaduoer.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/eguaduoer.png") }
+.faguo{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/faguo.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/faguo.png")}
+.hongdulasi{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/hongdulasi.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/hongdulasi.png") }
+.agenting{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/agenting.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/agenting.png") }
+.daiding {background: url(http://y2.ifengimg.com/2014/04/22/16085957.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y2.ifengimg.com/2014/04/22/16085957.png")}
+.bohei{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bohei.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/bohei.png")}
+.yilang{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/yilang.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/yilang.png")}
+.niriliya{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/niriliya.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/niriliya.png") }
+.aerjiliya{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/aierjiliya.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/aerjiliya.png") }
+.bilishi{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bilishi.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/bilishi.png") }
+.deguo{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/deguo.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/deguo.png")}
+.jiana{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/jiana.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/jiana.png")}
+.meiguo{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/meiguo.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/meiguo.png")}
+.putaoya{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/putaoya.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/putaoya.png") }
+.hanguo{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/hanguo.png) no-repeat; _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/hanguo.png")}
+
+.helan{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/helan.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/helan.png") }
+.ruishi{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/ruishi.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/ruishi.png") }
+.bg_vs{ background:url(http://y1.ifengimg.com/a/2014/0422/vs.jpg) no-repeat center 0; }
+
+.box03_m { width:128px; float:left; height:48px; }
+.box03_r { width:194px; float:left; }
+.s03, .s04 { width:54px; height:48px; float:left; font:bold 22px/48px Arial, Helvetica, sans-serif; text-align:center; color:#05284a; }
+.s03 { padding-left:10px; }
+.s04 { padding-right:10px; }
+.box_tit03 { height:26px; }
+.box_tit03 ul { padding-left:12px; }
+.box_tit03 li { float:left; color:#000; line-height:26px; }
+.n01 { width:34px; }
+.n02 { width:104px; }
+.n03 { width:34px; }
+.n04 { width:34px; padding:0 5px; }
+.n05 { width:34px; padding-left:7px; }
+.n06 { width:31px; }
+.n07 { width:104px; }
+.n08 { width:34px; }
+.box_cont { width:440px; margin:0 0 0 36px; height:196px; display:none; }
+.box_holder { width:219px; float:left; }
+.box_holder02 { width:219px; float:right; }
+.jspContainer { background: url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg03.gif); overflow: hidden; position: relative; }
+.jspPane { position: absolute; background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg04.jpg); }
+.box_holder02 .jspPane{ position: absolute; background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg04_2.jpg); }
+.jspVerticalBar { position: absolute; top: 10px; right: 0; width: 8px; height: 164px; }
+.jspHorizontalBar { position: absolute; bottom: 0; left: 0; width: 100%; height: 16px; background: red; }
+.jspVerticalBar *, .jspHorizontalBar * { margin: 0; padding: 0; }
+.jspCap { display: none; }
+.jspHorizontalBar .jspCap { float: left; }
+.jspTrack { background: url(http://y1.ifengimg.com/a/2014/0410/worldCup/bg02.gif); position: relative; }
+.jspDrag { background: #7e7e7e; position: relative; top: 0; left: 0; cursor: pointer; }
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag { float: left; height: 100%; }
+.jspArrow { background: #50506d; text-indent: -20000px; display: block; cursor: pointer; }
+.jspArrow.jspDisabled { cursor: default; background: #80808d; }
+.jspVerticalBar .jspArrow { height: 10px; display:none; }
+.jspHorizontalBar .jspArrow { width: 8px; float: left; height: 100%; }
+.jspVerticalBar .jspArrow:focus { outline: none; }
+.jspCorner { background: #eeeef4; float: left; height: 100%; }
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner { margin: 0 -3px 0 0; }
+.dl01 { height:21px; }
+.dl01 dt, .dl01 dd { float:left}
+.dl01 dt{ width:16px; line-height:20px; color:#fff; padding:0 12px 0 16px; text-align:center; }
+.box_holder02 .dl01 dt{ padding-left:13px; }
+.dl01 .dd01{ width:95px; line-height:20px; padding-left:3px; }
+.dl01 .dd02{ width:44px; line-height:20px; text-align:center; }
+.dl01 .dd03{ width:32px; position:relative; height:20px; text-align: center;}
+.dl01 .dd03 img{ position:absolute; left:10px; top:5px; }
+.box_holder02 .dl01 .dd03 img{ left:20px; }
+.box_vs_play{ position:relative; overflow:hidden; height:552px; width:100%; }
+.box_vs_pr{ position:absolute; left:0; top:0; width:100%; }
+
+* html,* html body{ background-image:url(about:blank); background-attachment:fixed; } 
+.fixed{ position: fixed; left: 0; top:48px; width:161px; height: 100px; z-index:100; }
+.ie6{ _position:absolute; _margin-top: 0; _top:expression(documentElement.scrollTop+48)} /* ie6 fixed hack */
+
+.fixed02{ position: fixed; right: 0; top:48px; width:50px; height: 150px; z-index:100; }
+.ie602{ _position:absolute; _margin-top: 0; _top:expression(documentElement.scrollTop+48)} /* ie6 fixed hack */
+
+.span01{ display:block; height:36px; font:12px/36px microsoft yahei; background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/btn.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/btn.png") ;width:100%; padding-left:70px; cursor:pointer; }
+span.current{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/btn_cur.png) no-repeat;_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://y1.ifengimg.com/a/2014/0410/worldCup/btn_cur.png"); color:#fff; }
+
+/*分享*/
+.bdshare_t{ background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/sharebg.jpg) no-repeat; height:155px; }
+.share{ float:right; padding-top:16px; position:relative; width:50px; cursor:pointer; }/*替换单页样式*/
+.share-bar-btn a{ display:block; width:36px; height:38px; margin:0; padding:0; background:url(http://y1.ifengimg.com/a/2014/0410/worldCup/sharebg.jpg) no-repeat; }
+.share-bar-btn span{ float:left; line-height:28px; }
+.share-bar-btn .bds_tsina{ background-position: 0 0; }
+.share-bar-btn .loading{ background-position:0 -227px!important; }
+.share-bar-btn .bds_qzone{ background-position:0 -39px; }
+.share-bar-btn .bds_tqq{ background-position:0 -77px; }
+.share-bar-btn a.bds_tsina:hover { background-position: 0 -157px; }
+.share-bar-btn a.bds_qzone:hover { background-position: 0 -196px; }
+.share-bar-btn a.bds_tqq:hover { background-position: 0 -234px; }
+.share-bar-btn .bds_twx { background-position: 0 -115px; }
+.share-bar-btn .bds_twx:hover { background-position: 0 -272px; }

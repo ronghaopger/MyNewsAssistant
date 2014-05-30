@@ -3,11 +3,13 @@
     <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - 我的 ASP.NET MVC 应用程序</title>
+        <title>@ViewBag.Title - 2014巴西之旅</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
     </head>
     <body>
         <header>
@@ -17,10 +19,11 @@
                 </div>
                 <div class="float-right">
                     <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                        <ul id="menu" style=" font-size: 1.3em;font-weight: 600;margin: 0 0 5px;padding: 0;text-align: right;">
+                            <li>@Html.ActionLink("头条", "Index", "Home")</li>
+                            <li>@Html.ActionLink("搜索", "Search", "Home")</li>
+                            <li>@Html.ActionLink("赛程", "InTime", "Home")</li>
                             <li>@Html.ActionLink("关于", "About", "Home")</li>
-                            <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
                         </ul>
                     </nav>
                 </div>
@@ -35,14 +38,11 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - 我的 ASP.NET MVC 应用程序</p>
+                    <p>&copy; @DateTime.Now.Year - 2014巴西之旅</p>
                 </div>
             </div>
         </footer>
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-        <script src="~/Scripts/MyJS/myjquery1-0.js"></script>
         <script type="text/javascript">
            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2847eec185aa0cd4c028390c5f83cb1d' type='text/javascript'%3E%3C/script%3E"));
