@@ -1,5 +1,23 @@
 ﻿@{
     ViewBag.Title = "Search";
 }
-
-<h2>Search</h2>
+<div style="text-align:center;">
+    <input id="searchText" type="text" />
+    <input id="search1Button" type="button" title="Powerd by Bing Knows" value="Bing Knows" onclick='javascript: bingKnows()'/>
+    <input id="search2Button" type="button" title="Powerd by Bing" value="Bing" onclick='javascript: bing()'/>
+    @*<input id="search3Button" type="button" title="Powerd by BaiDu" value="你懂的" onclick='javascript: Baidu()'/>*@
+</div>
+<div style="margin-top:10px;overflow:hidden;">
+    <iframe id="contentFrame" src="http://cn.bing.com/knows/search?q=%E5%BF%85%E5%BA%94%E7%BD%91%E5%85%B8" style="width:970px;height:580px;margin-top:-105px;border:0;"></iframe>
+</div>
+<script type="text/javascript">
+    bingKnows = function(){
+        $("#contentFrame").attr("src", "http://cn.bing.com/knows/search?q=" + encodeURIComponent($("#searchText").val()));
+    }
+    bing = function () {
+        $("#contentFrame").attr("src", "http://cn.bing.com/search?q=" + encodeURIComponent($("#searchText").val()));
+    }
+    //Baidu = function () {
+    //    $("#contentFrame").attr("src", "http://www.baidu.com/#wd=" + $("#searchText").val());
+    //}
+</script>

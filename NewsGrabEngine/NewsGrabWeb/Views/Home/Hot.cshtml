@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Hot";
+}
+<script src="~/Scripts/MyJS/myjquery1-0.js"></script>
+
+<div style="overflow: hidden;border-left: 4px solid #397ddb;padding-left: 20px;font-size: 34px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;">
+    <span style="font-size: 34px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;color: #c8c8c8;">昨晚头条</span>
+  @*  <span id="countTime" style="font-size: 26px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;color: #c8c8c8;float:right;">
+        —>世界杯倒计时
+    </span>
+    <span id="ggormm" style="float:right;display:none">
+        <a href="javascript:ggOnclick()" style="text-decoration:none; font-size: 25px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;color:#96CDE2;">GG?</a>
+        <a href="javascript:mmOnclick()" style="text-decoration:none; font-size: 25px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;color:rosybrown;">MM?</a>
+    </span>
+    <span id="gg" style="font-size: 26px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;color: #c8c8c8;float:right;display:none">
+        自己不会算啊？！
+    </span>
+    <span id="mm" style="font-size: 26px;line-height: 40px;letter-spacing: 4px;font-family: \5FAE\8F6F\96C5\9ED1;color: #c8c8c8;float:right;display:none">
+        亲，还有14天 :)
+    </span>*@
+</div>
+<div style="width:900px;height:500px;margin-top:20px;">
+    <div style="width:880px;height:500px">
+        <div id="list" style="width: 1186px;">
+            <div id="hupu" style="float:left; width: 170px; height: 500px; overflow: hidden; border-right:1px solid #c8c8c8;font-size:11px;">
+                <div id="hupu01">
+                    <span>来自虎扑</span>
+                    <div>
+                        <ol class="round">
+                            @foreach (var amodel in ViewData.Model)
+                            {
+                                if(amodel.FromWhere == "虎扑")
+                                {
+                                    <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                                }
+                            }
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="dongqiudi" style="float:left; margin-left:30px; width: 170px; height: 500px; overflow: hidden; border-right:1px solid #c8c8c8;font-size:11px;">
+            <div id="dongqiudi01">
+                <span>来自懂球帝</span>
+                <div>
+                    <ol class="round">
+                        @foreach (var amodel in ViewData.Model)
+                        {
+                            if (amodel.FromWhere == "懂球帝")
+                            {
+                                <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                            }
+                        }
+                    </ol>
+                </div>
+            </div>
+            </div>
+            <div id="tengxun" style="float:left; margin-left:30px; width: 170px; height: 500px; overflow: hidden; border-right:1px solid #c8c8c8;font-size:11px;">
+                <div id="tengxun01">
+                    <span>来自腾讯</span>
+                    <div>
+                        <ol class="round">
+                            @foreach (var amodel in ViewData.Model)
+                            {
+                                if (amodel.FromWhere == "腾讯")
+                                {
+                                    <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                                }
+                            }
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="xinlang" style="float:left; margin-left:30px; width: 170px; height: 500px; overflow: hidden; border-right:1px solid #c8c8c8;font-size:11px;">
+                <div id="xinlang01">
+                    <span>来自新浪</span>
+                     <div>
+                        <ol class="round">
+                            @foreach (var amodel in ViewData.Model)
+                            {
+                                if (amodel.FromWhere == "新浪")
+                                {
+                                    <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                                }
+                            }
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="fenghuangwang" style="float:left; margin-left:30px; width: 170px; height: 500px; overflow: hidden; font-size:11px;">
+                 <div id="fenghuangwang01">
+                    <span>来自凤凰网</span>
+                     <div>
+                        <ol class="round">
+                            @foreach (var amodel in ViewData.Model)
+                            {
+                                if (amodel.FromWhere == "凤凰网")
+                                {
+                                    <li><a href="@amodel.Url" target="_blank">@amodel.Title</a></li>
+                                }
+                            }
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

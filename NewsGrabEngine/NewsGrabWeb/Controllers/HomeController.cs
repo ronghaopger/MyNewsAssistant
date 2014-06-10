@@ -15,8 +15,12 @@ namespace NewsGrabWeb.Controllers
     {
         public ActionResult Index()
         {
-            ViewData.Model = DataManage.GetHotNews();
+            return View();
+        }
 
+        public ActionResult Hot()
+        {
+            ViewData.Model = DataManage.GetHotNews();
             return View();
         }
 

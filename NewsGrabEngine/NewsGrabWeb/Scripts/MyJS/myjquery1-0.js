@@ -80,6 +80,17 @@
         $("#countTime").css({ "display": "inline" });
         $("#ggormm").css({ "display": "none" });
     });
+
+    //首页动画
+    $("#box").mousemove(function (e) {
+        var xlength = e.pageX / 30;
+        var ylength = e.pageY / 40;
+        $("#boxOne").css("left", -80 - xlength);
+        $("#boxTwo").css("left", 280 - xlength);
+        $("#boxThree").css("left", 200 + xlength);
+        $("#boxTwo").css("top", 125 - ylength);
+        $("#boxThree").css("top", 160 + ylength);
+    });
 });
 
 

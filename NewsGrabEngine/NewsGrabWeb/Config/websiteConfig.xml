@@ -44,7 +44,7 @@
 
   <website name="新浪" url="http://2014.sina.com.cn/" charset="gb2312">
     <forums>
-      <forum name="头条" begin-flag="新闻头条" end-flag="视频头条"></forum>
+      <forum name="头条" begin-flag="fs-news mt0" end-flag="fs-match"></forum>
       <forum name="A组" begin-flag="" end-flag=""></forum>
       <forum name="B组" begin-flag="" end-flag=""></forum>
       <forum name="C组" begin-flag="" end-flag=""></forum>
@@ -58,7 +58,7 @@
 
   <website name="凤凰网" url="http://2014.ifeng.com/" charset="utf-8">
     <forums>
-      <forum name="头条" begin-flag="mainleftdiv" end-flag="phoPic"></forum>
+      <forum name="头条" begin-flag="最新动态" end-flag="世界杯倒计时"></forum>
       <forum name="A组" begin-flag="" end-flag=""></forum>
       <forum name="B组" begin-flag="" end-flag=""></forum>
       <forum name="C组" begin-flag="" end-flag=""></forum>
