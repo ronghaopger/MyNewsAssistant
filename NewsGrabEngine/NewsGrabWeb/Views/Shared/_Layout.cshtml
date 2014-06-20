@@ -10,6 +10,8 @@
         @Scripts.Render("~/bundles/modernizr")
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
+        <script src="~/Scripts/MyJS/myjquery1-0.js"></script>
+        <link href="~/Content/animate.css" rel="stylesheet" />
     </head>
     <body>
         <header>
@@ -20,10 +22,10 @@
                 <div class="float-right">
                     <nav>
                         <ul id="menu" style=" font-size: 1.3em;font-weight: 600;margin: 0 0 5px;padding: 0;text-align: right;">
-                            <li>@Html.ActionLink("头条", "Hot", "Home")</li>
-                            <li>@Html.ActionLink("搜索", "Search", "Home")</li>
-                            <li>@Html.ActionLink("赛程", "InTime", "Home")</li>
-                            <li>@Html.ActionLink("关于", "About", "Home")</li>
+                            <li id="hot">@Html.ActionLink("头条", "Hot", "Home")</li>
+                            <li id="search">@Html.ActionLink("搜索", "Search", "Home")</li>
+                            <li id="inTime">@Html.ActionLink("赛程", "InTime", "Home")</li>
+                            <li id="about">@Html.ActionLink("关于", "About", "Home")</li>
                         </ul>
                     </nav>
                 </div>

@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    //头条新闻行为
     $("#hupu").attr("DownFlag", false);
     $("#hupu").mouseenter(function () {
         $("#hupu").css({ "width": "300px", "height": "500px", "fontSize": "15px" });
@@ -64,6 +65,7 @@
         MoveDiv(e, "#fenghuangwang", "#fenghuangwang01");
     });
     
+    //世界杯倒计时
     $("#countTime").mouseenter(function () {
         $("#countTime").css({ "display": "none" });
         $("#ggormm").css({ "display": "inline" });
@@ -81,7 +83,7 @@
         $("#ggormm").css({ "display": "none" });
     });
 
-    //首页动画
+    //首页大动画
     $("#box").mousemove(function (e) {
         var xlength = e.pageX / 30;
         var ylength = e.pageY / 40;
@@ -90,6 +92,28 @@
         $("#boxThree").css("left", 200 + xlength);
         $("#boxTwo").css("top", 125 - ylength);
         $("#boxThree").css("top", 160 + ylength);
+    });
+    
+    //首页标题
+    $("#search").mouseenter(function () {
+        $("#search").removeClass().addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+            $(this).removeClass();
+        });
+    });
+    $("#hot").mouseenter(function () {
+        $("#hot").removeClass().addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+            $(this).removeClass();
+        });
+    });
+    $("#inTime").mouseenter(function () {
+        $("#inTime").removeClass().addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+            $(this).removeClass();
+        });
+    });
+    $("#about").mouseenter(function () {
+        $("#about").removeClass().addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+            $(this).removeClass();
+        });
     });
 });
 
