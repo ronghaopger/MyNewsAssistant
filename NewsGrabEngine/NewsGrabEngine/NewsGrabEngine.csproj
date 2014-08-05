@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilmManage.cs" />
     <Compile Include="Object\Forum.cs" />
     <Compile Include="Object\Tags\A.cs" />
     <Compile Include="Object\Website.cs" />

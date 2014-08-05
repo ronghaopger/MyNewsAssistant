@@ -36,6 +36,7 @@ namespace NewsGrabWeb.Controllers
 
         public ActionResult About()
         {
+            FilmManage.GetFilm();
             return View();
         }
     }

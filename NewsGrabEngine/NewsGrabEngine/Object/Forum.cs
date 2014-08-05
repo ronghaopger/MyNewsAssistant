@@ -19,5 +19,15 @@ namespace NewsGrabEngine.Object
             }
             return string.Empty;
         }
+        public static string GetForum(string content, string beginFlag, string endFlag)
+        {
+            int beginflag = content.IndexOf(beginFlag);
+            int endflag = content.IndexOf(endFlag);
+            if (beginflag != -1 && endflag != -1)
+            {
+                return content.Substring(beginflag + beginFlag.Length, endflag - beginflag);
+            }
+            return string.Empty;
+        }
     }
 }
